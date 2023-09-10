@@ -1,0 +1,270 @@
+@import url('https://fonts.cdnfonts.com/css/ds-digital');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'DS-Digital', sans-serif;
+}
+#wrapper{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  color: #fff;
+   background: linear-gradient(45deg, #08001f, #30197d);
+  /* background: url(ryan-klaus-qzZ7Xcscqh8-unsplash.jpg) center no-repeat; */
+}
+.clock-container{
+  width: 800px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /* background-color: red; */
+}
+.clock{
+  width: 100%;
+  height: 100%;
+  background: rgba(235, 0, 255, 0.11);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+}
+.clock-container::before{
+  content: '';
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  z-index: -1;
+  background: #f41b75;
+}
+.clock-container h1{
+  text-align: center;
+  /* pad: 10px; */
+  /* margin: 10px; */
+}
+.clock-container::after{
+  content: '';
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  right: -30px;
+  bottom: -50px;
+  z-index: -1;
+  background: #419aff;
+}
+.clock span{
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.clock span::after{
+  font-size: 16px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+#hrs::after{
+  content: 'hours';
+}
+#min::after{
+  content: 'min';
+}
+#sec::after{
+  content: 'sec';
+}
+@media (max-width:768px) {
+  .clock-container{
+    width: 600px;
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: red; */
+  }
+  .clock span{
+    font-size: 60px;
+    width: 90px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  .clock-container::before{
+    content: '';
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    position: absolute;
+    left: -50px;
+    top: -10px;
+    z-index: -1;
+    background: #f41b75;
+  }
+  .clock-container h1{
+    text-align: center;
+    /* pad: 10px; */
+    /* margin: 10px; */
+  }
+  .clock-container::after{
+    content: '';
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    z-index: -1;
+    background: #419aff;
+  }
+}
+@media (max-width:425px) {
+  .clock-container{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: red; */
+  }
+  .clock span{
+    font-size: 34px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  .clock-container::before{
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    position: absolute;
+    left: -50px;
+    top: -10px;
+    z-index: -1;
+    background: #f41b75;
+  }
+  .clock-container h1{
+    text-align: center;
+    /* pad: 10px; */
+    /* margin: 10px; */
+  }
+  .clock-container::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    z-index: -1;
+    background: #419aff;
+  }
+}
+@media (max-width:375px) {
+  .clock-container{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: red; */
+  }
+  .clock span{
+    font-size: 40px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  .clock-container::before{
+    content: '';
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    position: absolute;
+    left: -50px;
+    top: -10px;
+    z-index: -1;
+    background: #f41b75;
+  }
+  .clock-container h1{
+    text-align: center;
+    /* pad: 10px; */
+    /* margin: 10px; */
+  }
+  .clock-container::after{
+    content: '';
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    z-index: -1;
+    background: #419aff;
+  }
+}
+@media (max-width:325px) {
+  .clock-container{
+    width: 250px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: red; */
+  }
+  .clock span{
+    font-size: 40px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  .clock-container::before{
+    content: '';
+    width: 79px;
+    height: 79px;
+    border-radius: 5px;
+    position: absolute;
+    left: -50px;
+    top: -10px;
+    z-index: -1;
+    background: #f41b75;
+  }
+  .clock-container h1{
+    text-align: center;
+    /* pad: 10px; */
+    /* margin: 10px; */
+  }
+  .clock-container::after{
+    content: '';
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    z-index: -1;
+    background: #419aff;
+  }
+}
+
+
+
+
