@@ -46,7 +46,7 @@
 }
 .clock-container h1{
   text-align: center;
-  /* pad: 10px; */
+   padding: 10px; 
   /* margin: 10px; */
 }
 .clock-container::after{
@@ -56,7 +56,7 @@
   border-radius: 50%;
   position: absolute;
   right: -30px;
-  bottom: -50px;
+  bottom: -90px;
   z-index: -1;
   background: #419aff;
 }
@@ -124,7 +124,7 @@
     border-radius: 50%;
     position: absolute;
     right: -30px;
-    bottom: -50px;
+    bottom: -80px;
     z-index: -1;
     background: #419aff;
   }
@@ -169,7 +169,7 @@
     border-radius: 50%;
     position: absolute;
     right: -30px;
-    bottom: -50px;
+    bottom: -80px;
     z-index: -1;
     background: #419aff;
   }
@@ -214,7 +214,7 @@
     border-radius: 50%;
     position: absolute;
     right: -30px;
-    bottom: -50px;
+    bottom: -80px;
     z-index: -1;
     background: #419aff;
   }
@@ -259,7 +259,7 @@
     border-radius: 50%;
     position: absolute;
     right: -30px;
-    bottom: -50px;
+    bottom: -80px;
     z-index: -1;
     background: #419aff;
   }
